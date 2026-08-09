@@ -2,9 +2,8 @@
 <html lang="ta">
 <head>
     <meta charset="UTF-8">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!-- Viewport: எந்த சாதனத்திலும் Desktop View-ஐ கட்டாயப்படுத்த அகலம் 1280px என அமைக்கப்பட்டுள்ளது -->
+    <meta name="viewport" content="width=1280">
     <title>அலுவலகக் கடிதம் (Office Letter)</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -13,23 +12,21 @@
             background-color: #f3f4f6;
         }
 
+        /* Desktop Container: Top-Bottom layout */
         .desktop-wrapper {
-    width: 100%;
-    max-width: 1280px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 3rem;
-    padding: 20px 10px; /* திரையின் ஓரங்களில் இடைவெளிக்காக */
-}
+            width: 1280px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column; /* Stack vertically */
+            align-items: center; /* Center horizontally */
+            gap: 3rem;
+            padding: 20px 0;
+        }
 
-
+        /* Form Container Size */
         .form-container {
-    width: 100%; 
-    max-width: 900px; 
-}
-
+            width: 1200px; /* Restricting width so it doesn't stretch too much */
+        }
 
         /* Preview Container Layout */
         .preview-wrapper {
