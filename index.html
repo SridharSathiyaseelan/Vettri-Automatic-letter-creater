@@ -129,10 +129,10 @@
                 <!-- Sender Details -->
                 <div>
                     <div class="flex justify-between mb-1">
-                        <label class="font-semibold text-gray-700">அனுப்புநர் (From):</label>
+                        <label class="text-2xl font-semibold text-gray-700">அனுப்புநர் (From):</label>
                         <div class="space-x-2">
-                            <button type="button" onclick="saveSender()" class="text-xs bg-green-600 text-white px-3 py-1 rounded">SAVE</button>
-                            <button type="button" onclick="clearSender()" class="text-xs bg-red-600 text-white px-3 py-1 rounded">CLEAR</button>
+                            <button type="button" onclick="saveSender()" class="text-3xl bg-green-600 text-white px-3 py-1 rounded">SAVE</button>
+                            <button type="button" onclick="clearSender()" class="text-3xl bg-red-600 text-white px-3 py-1 rounded">CLEAR</button>
                         </div>
                     </div>
                     <textarea id="senderInput" rows="3" class="w-full p-3 border-2 border-blue-400 rounded outline-none focus:border-blue-600" oninput="updatePreview()"></textarea>
@@ -140,33 +140,33 @@
 
                 <!-- Recipient Details -->
                 <div>
-                    <label class="font-semibold text-gray-700">பெறுநர் (To):</label>
+                    <label class="text-2xl font-semibold text-gray-700">பெறுநர் (To):</label>
                     <textarea id="recipientInput" rows="3" class="w-full p-3 border-2 border-blue-400 rounded outline-none focus:border-blue-600" oninput="updatePreview()"></textarea>
                 </div>
 
                 <!-- Ref & Date -->
                 <div class="grid grid-cols-2 gap-6">
                     <div>
-                        <label class="font-semibold text-gray-700">ந.க.எண்:</label>
+                        <label class="text-2xl font-semibold text-gray-700">ந.க.எண்:</label>
                         <input type="text" id="refNoInput" class="w-full p-3 border-2 border-blue-400 rounded outline-none focus:border-blue-600" oninput="updatePreview()">
                     </div>
                     <div>
-                        <label class="font-semibold text-gray-700">நாள்:</label>
+                        <label class="text-2xl font-semibold text-gray-700">நாள்:</label>
                         <input type="text" id="dateInput" class="w-full p-3 border-2 border-blue-400 rounded outline-none focus:border-blue-600" oninput="updatePreview()">
                     </div>
                 </div>
 
                 <!-- Subject -->
                 <div>
-                    <label class="font-semibold text-gray-700">பொருள்:</label>
+                    <label class="text-2xl font-semibold text-gray-700">பொருள்:</label>
                     <input type="text" id="subjectInput" class="w-full p-3 border-2 border-blue-400 rounded outline-none focus:border-blue-600" oninput="updatePreview()" placeholder="பொருள்...">
                 </div>
 
                 <!-- References -->
                 <div>
                     <div class="flex justify-between items-center mb-1">
-                        <label class="font-semibold text-gray-700">பார்வை:</label>
-                        <button type="button" onclick="addReferenceInput()" class="text-sm bg-blue-600 text-white px-3 py-1 rounded">+ புதிய பார்வை</button>
+                        <label class="text-2xl font-semibold text-gray-700">பார்வை:</label>
+                        <button type="button" onclick="addReferenceInput()" class="text-3xl bg-blue-600 text-white px-3 py-1 rounded">+ புதிய பார்வை</button>
                     </div>
                     <div id="referenceContainer" class="space-y-3">
                         <input type="text" class="reference-input w-full p-3 border-2 border-blue-400 rounded outline-none focus:border-blue-600" oninput="updatePreview()" placeholder="பார்வை 1...">
@@ -175,24 +175,24 @@
 
                 <!-- Content -->
                 <div>
-                    <label class="font-semibold text-gray-700">செய்தி:</label>
+                    <label class="text-2xl font-semibold text-gray-700">செய்தி:</label>
                     <textarea id="bodyInput" rows="6" class="w-full p-3 border-2 border-blue-400 rounded outline-none focus:border-blue-600" oninput="updatePreview()"></textarea>
                 </div>
 
                 <!-- Seal / Stamp Details (Bottom Right) -->
                 <div>
                     <div class="flex justify-between mb-1">
-                        <label class="font-semibold text-gray-700">அலுவலக முத்திரை / Seal:</label>
+                        <label class="text-2xl font-semibold text-gray-700">அலுவலக முத்திரை / Seal:</label>
                         <div class="space-x-2">
-                            <button type="button" onclick="saveSeal()" class="text-xs bg-green-600 text-white px-3 py-1 rounded">SAVE</button>
-                            <button type="button" onclick="clearSeal()" class="text-xs bg-red-600 text-white px-3 py-1 rounded">CLEAR</button>
+                            <button type="button" onclick="saveSeal()" class="text-2xl  bg-green-600 text-white px-3 py-1 rounded">SAVE</button>
+                            <button type="button" onclick="clearSeal()" class="text-2xl bg-red-600 text-white px-3 py-1 rounded">CLEAR</button>
                         </div>
                     </div>
-                    <textarea id="sealInput" rows="3" class="w-full p-3 border-2 border-blue-400 rounded outline-none focus:border-blue-600" placeholder="பள்ளி முத்திரை / அலுவலக முகவரி விவரங்கள்..." oninput="updatePreview()"></textarea>
+                    <textarea id="sealInput" rows="3" class="text-2xl w-full p-3 border-2 border-blue-400 rounded outline-none focus:border-blue-600" placeholder="பள்ளி முத்திரை / அலுவலக முகவரி விவரங்கள்..." oninput="updatePreview()"></textarea>
                 </div>
 
                 <div class="pt-4">
-                    <button type="button" onclick="window.print()" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 rounded transition-colors duration-200 text-lg shadow-lg">அச்சிடுக / PDF ஆக சேமிக்க</button>
+                    <button type="button" onclick="window.print()" class="text-2xl w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 rounded transition-colors duration-200 text-lg shadow-lg">அச்சிடுக / PDF ஆக சேமிக்க</button>
                 </div>
             </form>
         </div>
@@ -200,8 +200,8 @@
         <!-- PREVIEW SECTION (BOTTOM) -->
         <div class="preview-wrapper">
             <!-- Preview Heading -->
-            <h2 class="text-2xl font-bold mb-6 text-emerald-700 text-center preview-header tracking-wide border-b-2 border-emerald-200 pb-2 w-full max-w-4xl">முன்னோட்டம் (Preview)<br>
-            <span class="text-sm text-gray-600 font-normal">Printout இல் alignment சரியாக வந்துவிடும்</span></h2>
+            <h2 class="text-3xl font-bold mb-6 text-emerald-700 text-center preview-header tracking-wide border-b-2 border-emerald-200 pb-2 w-full max-w-4xl">முன்னோட்டம் (Preview)<br>
+            <span class="text-2xl text-gray-600 font-normal">Printout இல் alignment சரியாக வந்துவிடும்</span></h2>
             
             <div id="pdfContent" class="a4-page">
                 <!-- Header -->
